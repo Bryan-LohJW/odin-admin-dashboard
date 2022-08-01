@@ -1,0 +1,56 @@
+
+
+:root {
+    --blue-theme:#0284c7;
+    --white-font: rgb(255,255,255);
+    --grey-theme: rgb(1,1,1);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.dashboard {
+    grid-area: 1/1/-1/2;
+
+    display: grid;
+    grid-template-rows: 80px 300px 200px;
+
+    background-color: var(--blue-theme);
+    color: var(--white-font);
+}
+
+.dashboard>* {
+    border: 1px solid black;
+}
+
+.tab {
+    display: grid;
+    grid-template-columns: 3fr 8fr;
+}
+
+.dashboard img {
+    height: 25px;
+    align-self: center;
+    place-self: center;
+}
+
+.section .tab img,
+.setting .tab img {
+    height: 15px;
+    place-self: center;
+}
+
+.navbar {
+    grid-area: 1/2/2/-1;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+.content {
+    grid-area: 2/2/-1/-1;
+}
