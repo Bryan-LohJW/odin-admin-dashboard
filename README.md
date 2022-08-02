@@ -11,3 +11,5 @@ Communities Icon: Meeting Room icon by Icons8
 Setting Icon: Settings icon by Icons8
 Support Icon: Help icon by Icons8
 Privacy Icon: Padlock Outline icon by Icons8
+Notification Icon: Alarm icon by Icons8
+Search Icon: Search icon by Icons8
