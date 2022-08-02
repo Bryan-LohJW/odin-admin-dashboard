@@ -55,6 +55,7 @@ table {
     --blue-theme:#0284c7;
     --white-font: rgb(255,255,255);
     --grey-theme: #EBECF0;
+    --grey-font: #868686;
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
 }
@@ -219,7 +220,7 @@ table {
 .quickAction {
     display: grid;
     grid-template-columns: repeat(3. 1fr);
-    gap: 2rem;
+    gap: 1.5rem;
     align-items: flex-end;
     padding-bottom: 10px;
 }
@@ -242,7 +243,8 @@ table {
     border: none;
     border-radius: 40px;
     font-weight: bolder;
-    height: 30px;
+    height: 45px;
+    min-width: 70px;
     width: 100%;
     font-size: 1rem;;
 }
@@ -277,9 +279,64 @@ table {
 .content .projects .card {
     padding: 30px;
 
+    display: grid;
+    grid-template-rows: 1fr 40px;
+
     background-color: var(--white-font);
     border-radius:5px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-left: 10px solid orange;
+}
+
+.card .textContent {
+    grid-row: 1/2;
+}
+
+.card .textContent h3 {
+    font-weight: bolder;
+    font-size: 1.25rem;
+}
+
+.card .textContent p {
+    font-size: 1rem;
+    color: var(--grey-font)
+}
+
+.card .cardAction {
+    grid-row: 2/3;
+
+    justify-self: end;
+    align-self: flex-end;
+}
+
+.card button {
+    width: 30px;
+    height: 30px;
+    margin: 00px 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+}
+
+.card button.star {
+    background-image: url(images/icons8-star-48.png);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.card button.collection {
+    background-image: url(images/icons8-eye-48.png);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.card button.branch {
+    background-image: url(images/icons8-merge-git-48.png);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .content .trendingTitle {
