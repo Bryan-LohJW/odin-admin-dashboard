@@ -298,12 +298,12 @@ table {
 
 .card .textContent h3 {
     font-weight: bolder;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .card .textContent p {
     padding-top: 5px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: var(--grey-font)
 }
 
@@ -373,13 +373,13 @@ table {
 }
 
 .announce h3 {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 
 .announce p{
     margin: 5px 0px 0px 0px;
     color: var(--grey-font);
-    font-size: 0.9rem;
+    font-size: 0.7rem;
 }
 
 .content .trendingTitle{
